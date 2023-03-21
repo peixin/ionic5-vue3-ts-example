@@ -2,7 +2,11 @@ This Project is an minimal reproduction for some [Ionic Framework](https://ionic
 
 Ionic Vue 5 + Vue3 + Typescript Tabs Project
 
-**[Preview](https://ionic5-vue3-ts-example.vercel.app/)**
+
+**minimal reproduction: [https://github.com/peixin/ionic5-vue3-ts-example](https://github.com/peixin/ionic5-vue3-ts-example)**
+
+**preview: [https://ionic5-vue3-ts-example.vercel.app](https://ionic5-vue3-ts-example.vercel.app)**
+
 
 ### Error 1:
 
