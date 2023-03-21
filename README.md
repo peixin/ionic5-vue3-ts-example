@@ -2,6 +2,8 @@ This Project is an minimal reproduction for some [Ionic Framework](https://ionic
 
 Ionic Vue 5 + Vue3 + Typescript Tabs Project
 
+**[Preview](https://ionic5-vue3-ts-example.vercel.app/)**
+
 ### Error 1:
 
 ion-page render multiple times, and it cause some common component in router page which shared for all child router render multiple times
