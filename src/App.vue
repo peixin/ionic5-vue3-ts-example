@@ -1,10 +1,12 @@
 <template>
   <ion-app>
-    <ion-router-outlet />
+    <ion-router-outlet></ion-router-outlet>
+    <CommonLayer></CommonLayer>
   </ion-app>
 </template>
 
 <script setup lang="ts">
+import CommonLayer from "@/views/CommonLayer.vue";
 import { IonApp } from "@ionic/vue";
 </script>
 

@@ -19,24 +19,20 @@ const routes: Array<RouteRecordRaw> = [
       },
     ],
   },
-
   {
     path: "/course/:courseId(\\d+)",
     name: "Course",
-    component: () => import("../views/course/index.vue"),
     redirect: { name: "CourseNavigation" },
-    children: [
-      {
-        path: "navigation",
-        name: "CourseNavigation",
-        component: () => import("../views/course/Navigation.vue"),
-      },
-      {
-        path: "information",
-        name: "CourseInformation",
-        component: () => import("../views/course/Information.vue"),
-      },
-    ],
+  },
+  {
+    path: "/course/:courseId(\\d+)/navigation",
+    name: "CourseNavigation",
+    component: () => import("../views/course/Navigation.vue"),
+  },
+  {
+    path: "/course/:courseId(\\d+)/information",
+    name: "CourseInformation",
+    component: () => import("../views/course/Information.vue"),
   },
   {
     path: "/login",

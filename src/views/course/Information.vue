@@ -21,4 +21,5 @@ const count = ref(0);
 onMounted(() => {
   count.value = document.querySelectorAll("ion-fab[data-testid=bookmark]").length;
 });
+
 </script>
