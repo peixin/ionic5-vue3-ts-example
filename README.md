@@ -51,6 +51,18 @@ In [`App.vue`](./src/App.vue) using `router-view` can achieve the goal, but usin
  </template>
 ```
 
+Even after upgrading all dependencies to the latest version, the problem still exists. (2023-05-16)
+```
+"@ionic/core": "7.0.6",
+"@ionic/vue": "7.0.6",
+"@ionic/vue-router": "7.0.6",
+"core-js": "^3.6.5",
+"ionicons": "7.1.0",
+"typescript": "5.0.4",
+"vue": "^3.2.21",
+"vue-router": "4.2.0"
+```
+
 
 [Ionic Framework GitHub Issue](https://github.com/ionic-team/ionic-framework/issues/27485)
 
