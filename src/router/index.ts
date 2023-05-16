@@ -8,15 +8,7 @@ const router = createRouter({
 
 export default router;
 
-
-router.beforeEach((to, __from, next) => {
-  if (to.matched.some((record) => !record.meta.anonymous)) {
-    if (localStorage.getItem("loggedIn") === "true") {
-      next();
-    } else {
-      next({ name: "Login" });
-    }
-  } else {
-    next();
-  }
-})
+router.beforeEach(async (to, from, next) => {
+  console.log(`From ${from.name?.toString()} To: ${to.name?.toString()}`);
+  next();
+});

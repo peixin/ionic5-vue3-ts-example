@@ -4,7 +4,7 @@
     <ion-content>
       <div class="page full flex-column-center">
         <ion-icon :icon="book" size="large" color="success" />
-        <ion-label>Course {{ $route.params.courseId }}</ion-label>
+        <ion-label>Course {{ $route.params.courseId }} Navigation</ion-label>
         <router-link :to="`/course/${$route.params.courseId}/information`">Goto Information</router-link>
       </div>
     </ion-content>

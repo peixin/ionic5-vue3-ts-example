@@ -1,6 +1,8 @@
 <template>
   <ion-app>
     <ion-router-outlet></ion-router-outlet>
+    <!-- <router-view></router-view> --> 
+    <!-- use router view is correct -->
   </ion-app>
 </template>
 
@@ -23,6 +25,6 @@ import { IonApp } from "@ionic/vue";
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 1rem;
 }
-
 </style>

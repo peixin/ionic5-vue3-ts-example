@@ -20,7 +20,7 @@ import { IonList, IonItem } from "@ionic/vue";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
-const courses = new Array(Math.ceil(Math.random() * 20 + 5))
+const courses = new Array(Math.ceil(Math.random() * 10 + 5))
   .fill(0)
   .map((_, index) => ({ name: `Course ${index + 1}`, id: index + 1 }));
 const onClick = (courseId: number) => {
