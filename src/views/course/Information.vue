@@ -5,7 +5,9 @@
       <div class="page full flex-column-center">
         <ion-icon :icon="informationCircle" size="large" color="success" />
         <ion-label>Course {{ $route.params.courseId }}</ion-label>
-        Common Float Bookmark button number: {{ count }}
+        <div>
+          onBeforeRouteLeave to replace to Leave page, the url is changed but component not
+        </div>
       </div>
     </ion-content>
   </ion-page>
@@ -13,13 +15,14 @@
 
 <script setup lang="ts">
 import { informationCircle } from "ionicons/icons";
-import { ref } from "vue";
-import { onMounted } from "vue";
+import { onBeforeRouteLeave } from "vue-router";
 
-const count = ref(0);
-
-onMounted(() => {
-  count.value = document.querySelectorAll("ion-fab[data-testid=bookmark]").length;
+onBeforeRouteLeave((to, from, next) => {
+  if (to.name === "CourseNavigation") {
+    next({ name: "CourseLeave", replace: true, force: true })
+  } else {
+    next()
+  }
 });
 
 </script>

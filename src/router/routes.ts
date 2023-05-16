@@ -4,20 +4,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Index",
-    redirect: "/home",
-    component: () => import("../views/index.vue"),
-    children: [
-      {
-        path: "/home",
-        name: "Home",
-        component: () => import("../views/Home.vue"),
-      },
-      {
-        path: "/courses",
-        name: "Courses",
-        component: () => import("../views/Courses.vue"),
-      },
-    ],
+    redirect: "/courses",
+  },
+  {
+    path: "/courses",
+    name: "Courses",
+    component: () => import("../views/Courses.vue"),
   },
   {
     path: "/course/:courseId(\\d+)",
@@ -35,12 +27,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/course/Information.vue"),
   },
   {
-    path: "/login",
-    name: "Login",
-    component: () => import("../views/Login.vue"),
-    meta: {
-      anonymous: true,
-    },
+    path: "/course/:courseId(\\d+)/leave",
+    name: "CourseLeave",
+    component: () => import("../views/course/Leave.vue"),
   },
   {
     path: "/:pathMatch(.*)*",
