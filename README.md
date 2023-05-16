@@ -52,6 +52,6 @@ In [`App.vue`](./src/App.vue) using `router-view` can achieve the goal, but usin
 ```
 
 
-[Github Issue](https://github.com/ionic-team/ionic-framework/issues/27485)
+[Ionic Framework GitHub Issue](https://github.com/ionic-team/ionic-framework/issues/27485)
 
 
