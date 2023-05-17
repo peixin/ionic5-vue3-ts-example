@@ -63,6 +63,14 @@ Even after upgrading all dependencies to the latest version, the problem still e
 "vue-router": "4.2.0"
 ```
 
+---
+Update 2023-05-17. 
+
+The issues using global [Navigation Guard](https://router.vuejs.org/guide/advanced/navigation-guards.html) and using Component hook `beforeRouteLeave` are the same. 
+
+Returning to another page is a real need for some special pages. and vue-router implements it perfectly.
+
+I found that navigation guards can intercept route `push/replace` but does not work for route `back`.
 
 [Ionic Framework GitHub Issue](https://github.com/ionic-team/ionic-framework/issues/27485)
 

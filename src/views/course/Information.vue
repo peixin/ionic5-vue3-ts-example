@@ -15,25 +15,6 @@
 
 <script setup lang="ts">
 import { informationCircle } from "ionicons/icons";
-import { onBeforeRouteLeave } from "vue-router";
-
-onBeforeRouteLeave((to, from, next) => {
-  console.log(`${from.name?.toString()} --> ${to.name?.toString()}`);
-
-  if (to.name !== "CourseLeave") {
-    next({
-      name: "CourseLeave",
-      replace: true,
-      query: {
-        from: from.name as string,
-        to: to.name as string
-      },
-    })
-  } else {
-    next();
-  }
-});
-
 </script>
 
 <style scoped>

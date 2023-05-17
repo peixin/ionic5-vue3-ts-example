@@ -1,14 +1,13 @@
+// import { createRouter, createWebHistory } from "vue-router";
 import { createRouter, createWebHistory } from "@ionic/vue-router";
 import routes from "./routes";
+import customizedNavigation from "./customized-navigation";
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
-export default router;
+customizedNavigation.init(router);
 
-router.beforeEach(async (to, from, next) => {
-  console.log(`From ${from.name?.toString()} To: ${to.name?.toString()}`);
-  next();
-});
+export default router;
