@@ -14,14 +14,16 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@ionic/core": "7.0.6",
-    "@ionic/vue": "7.0.6",
-    "@ionic/vue-router": "7.0.6",
-    "core-js": "^3.30.2",
-    "ionicons": "7.1.0",
-    "typescript": "5.0.4",
-    "vue": "^3.3.2",
-    "vue-router": "4.2.0"
+    "@ionic/vue": "5.9.4",
+    "@ionic/vue-router": "npm:@wisdomgarden/react-router@5.9.400",
+    "core-js": "^3.8.3",
+    "ionicons": "5.5.4",
+    "typescript": "4.5.4",
+    "vue": "^3.2.21",
+    "vue-router": "4.1.3"
+  },
+  "resolutions": {
+    "@ionic/vue/@ionic/core": "npm:@wisdomgarden/ionic-core@5.9.405"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^5.0.8",

@@ -53,7 +53,7 @@ app.component("ion-back-button", IonBackButton);
 
 app.component("CommonHeader", CommonHeader);
 
-app.use(IonicVue).use(router);
+app.use(IonicVue, { mode: "ios", hardwareBackButton: false, swipeBackEnabled: true }).use(router);
 
 router.isReady().then(() => {
   app.mount("#app");
